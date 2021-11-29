@@ -1,52 +1,44 @@
 import React, { Component } from "react";
+import Add from "./add";
 import Habit from "./habit";
 
 export default class Habits extends Component {
-  state = {
-    // 데이터를 가지고 있는 곳이 데이터를 어떻게 수정할지 잘 알고 있는 최적의 장소 그래서 여기서 처리하는게 가장 좋음!
-    habits: [
-      { id: 1, name: "Reading", count: 1 },
-      { id: 2, name: "Coding", count: 2 },
-      { id: 3, name: "Chilling", count: 3 },
-    ],
-  };
   //어떤 습관의 count를 +1할건지 습관을 받아와야함
   handleIncrement = (habit) => {
-    // habit.count++; state를 직접 변경하는 것은 좋지 않음
-    const habits = [...this.state.habits];
-    const index = habits.indexOf(habit);
-    habits[index].count++;
-    this.setState({ habits: habits }); //{habits} 이렇게 써도 ㄱㅊ, key: value-local variable -> state.habits
+    this.props.onIncrement(habit);
   };
 
   handleDecrement = (habit) => {
-    const habits = [...this.state.habits];
-    const index = habits.indexOf(habit);
-    const count = habits[index].count - 1;
-    habits[index].count = count < 0 ? 0 : count;
-    this.setState({ habits: habits });
+    this.props.onDecrement(habit);
   };
 
   handleTrash = (habit) => {
-    const habits = [...this.state.habits];
-    const index = habits.indexOf(habit);
-    habits.filter((habits) => habits !== habits[index]);
-    this.setState({ habits: habits });
+    this.props.onTrash(habit);
+  };
+
+  handleAdd = (name) => {
+    this.props.onAdd(name);
   };
 
   render() {
     return (
-      <ul>
-        {this.state.habits.map((habit) => (
-          <Habit
-            key={habit.id}
-            habit={habit}
-            onIncrement={this.handleIncrement}
-            onDecrement={this.handleDecrement}
-            onTrash={this.handleTrash}
-          /> // map(habit)을 전달
-        ))}
-      </ul>
+      <>
+        <Add onAdd={this.handleAdd} />
+        <ul>
+          {this.props.habits.map((habit) => (
+            <Habit
+              key={habit.id}
+              habit={habit}
+              onIncrement={this.handleIncrement}
+              onDecrement={this.handleDecrement}
+              onTrash={this.handleTrash}
+            /> // map(habit)을 전달
+          ))}
+        </ul>
+        <button className="habits-reset" onClick={this.props.onReset}>
+          Reset
+        </button>
+      </>
     );
   }
 }

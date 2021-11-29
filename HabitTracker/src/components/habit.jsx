@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class Habit extends Component {
   handleIncrement = () => {
-    this.props.onIncrement(this.props.habit); //habits의 habit인자로 전달(?)
+    this.props.onIncrement(this.props.habit);
   };
 
   handleDecrement = () => {
