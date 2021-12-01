@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
-export default class Add extends Component {
+export default class Add extends PureComponent {
   // 리액트에선 dom요소 사용 ㄴㄴ 그래서 다른 라액트 요소에 접근하고 싶다면 Ref사용해야함
   inputRef = React.createRef();
 
@@ -12,6 +12,7 @@ export default class Add extends Component {
     this.inputRef.current.value = "";
   };
   render() {
+    console.log("add");
     return (
       <form className="add" onSubmit={this.onSubmit}>
         <input

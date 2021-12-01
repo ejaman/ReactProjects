@@ -25,13 +25,20 @@ button {
   color: white;
   border-radius: 40%;
 }
+.today {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  color: #524e4d;
+}
 .add {
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 .add-bar {
   font-size: 1.3rem;
-  margin-left: 1.2em;
-  width: 30rem;
+
+  width: 20rem;
   height: 2.7rem;
   outline: 0;
 }
@@ -48,12 +55,10 @@ button {
   height: 4rem;
   width: 11rem;
   margin-top: 1.5rem;
-
   border-radius: 10px;
 }
 .all {
   width: 9rem;
-  margin-left: 2.2rem;
 }
 .add-btn:hover,
 .habits-reset:hover {
@@ -70,14 +75,14 @@ button {
   display: inline-block;
   text-align: center;
   font-size: 1.4rem;
-  width: 2.7rem;
+  width: 4rem;
   height: 2.7rem;
   line-height: 2.5rem;
   margin-left: 0.2em;
   margin-right: 0.5em;
   background-color: rgb(196, 196, 196);
   color: white;
-  border-radius: 40%;
+  border-radius: 10px;
 }
 
 .habit-btn {

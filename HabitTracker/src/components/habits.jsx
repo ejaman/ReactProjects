@@ -21,6 +21,7 @@ export default class Habits extends Component {
   };
 
   render() {
+    console.log("habits");
     return (
       <>
         <Add onAdd={this.handleAdd} />
@@ -39,7 +40,7 @@ export default class Habits extends Component {
           Reset all
         </button>
         <button className="habits-reset count" onClick={this.props.onReset}>
-          Reset count
+          Reset times
         </button>
       </>
     );
