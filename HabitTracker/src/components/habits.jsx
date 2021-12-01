@@ -35,8 +35,11 @@ export default class Habits extends Component {
             /> // map(habit)을 전달
           ))}
         </ul>
-        <button className="habits-reset" onClick={this.props.onReset}>
-          Reset
+        <button className="habits-reset all" onClick={this.props.onResetAll}>
+          Reset all
+        </button>
+        <button className="habits-reset count" onClick={this.props.onReset}>
+          Reset count
         </button>
       </>
     );

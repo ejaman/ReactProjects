@@ -48,6 +48,10 @@ export default class App extends Component {
     });
     this.setState({ habits: habits });
   };
+  handleResetAll = () => {
+    const habits = this.state.habits.filter((item) => item.name === null);
+    this.setState({ habits: habits });
+  };
 
   render() {
     return (
@@ -62,6 +66,7 @@ export default class App extends Component {
           onTrash={this.handleTrash}
           onAdd={this.handleAdd}
           onReset={this.handleReset}
+          onResetAll={this.handleResetAll}
         />
       </>
     );

@@ -18,7 +18,7 @@ export default class Add extends Component {
           ref={this.inputRef}
           className="add-bar"
           type="text"
-          placeholder="enter habit!"
+          placeholder="  Add habit"
         ></input>
         <button className="add-btn" type="submit">
           Add
