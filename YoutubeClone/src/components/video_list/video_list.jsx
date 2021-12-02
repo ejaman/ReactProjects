@@ -1,14 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
+import VideoItem from "../video_item/video_item";
+import styles from "./video_list.module.css";
 
-export default class VideoList extends Component {
-  render() {
-    return (
-      <>
-        <div>videos</div>
-        <ul>
-          <span> </span>
-        </ul>
-      </>
-    );
-  }
-}
+const VideoList = (props) => (
+  <ul className={styles.list}>
+    {props.videos.map((item) => (
+      <VideoItem key={item.id} video={item} />
+    ))}
+  </ul>
+);
+
+export default VideoList;
