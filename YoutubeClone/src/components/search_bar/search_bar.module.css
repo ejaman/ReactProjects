@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  padding: 0.5em 1em;
+  background: #212020;
+  color: white;
+  opacity: 0.97;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.bar {
+  height: 2.8rem;
+  width: 3rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+.logoImg {
+  height: 2rem;
+}
+.logotxt {
+  margin-left: 0.1rem;
+  margin-right: 10rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.input {
+  width: 50%;
+  height: 2.8rem;
+  background: black;
+  color: rgb(238, 238, 238);
+  font-size: 1rem;
+  border: none;
+  outline: 0;
+}
+.searchBtn {
+  height: 2.8rem;
+  width: 3.8rem;
+  border: none;
+  background: #323232;
+}
+.searchBtn:hover {
+  opacity: 0.9;
+}
+.searchImg {
+  height: 1.2rem;
+  width: 1.2rem;
+}
