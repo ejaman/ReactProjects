@@ -7,7 +7,6 @@ const SearchBar = ({ onSearch }) => {
   const handleSearch = () => {
     const value = inputRef.current.value;
     onSearch(value);
-    // inputRef.current.value = "";
   };
 
   // 각각 이벤트를 받아서 처리
@@ -21,11 +20,13 @@ const SearchBar = ({ onSearch }) => {
   };
   return (
     <div className={styles.header}>
-      <div className={styles.logo}>
-        <button className={styles.bar}>☰</button>
-        <img className={styles.logoImg} src="./images/logo.png" alt="logo" />
-        <span className={styles.logotxt}>Yotube</span>
-      </div>
+      <button className={styles.bar}>☰</button>
+      <a href="https://www.youtube.com" title="youtube">
+        <div className={styles.logo}>
+          <img className={styles.logoImg} src="./images/logo.png" alt="logo" />
+          <span className={styles.logotxt}>Yotube</span>{" "}
+        </div>
+      </a>
 
       <input
         ref={inputRef}

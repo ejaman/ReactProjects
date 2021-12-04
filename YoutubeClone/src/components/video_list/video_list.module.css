@@ -1,6 +1,9 @@
 .list {
   display: flex;
   flex-wrap: wrap;
-  /* padding-right: 24px; */
-  padding-top: 4rem;
+  width: 90%;
+  margin-left: 10.5rem;
+  margin-top: 4rem;
+  padding: 0.5rem;
+  list-style: none;
 }
