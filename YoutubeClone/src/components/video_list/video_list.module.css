@@ -1,16 +1,16 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  margin-left: 10.5rem;
-  margin-top: 4rem;
+  width: 83%;
+  margin-left: 14rem;
+  margin-top: 3.5rem;
   padding: 0.5rem;
   list-style: none;
 }
 
 .list {
-  width: 80%;
-  margin-top: 3rem;
+  width: 77%;
+  margin-top: 3.5rem;
   padding: 0.5rem;
   list-style: none;
 }

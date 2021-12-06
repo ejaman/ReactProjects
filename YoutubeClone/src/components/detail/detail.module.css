@@ -1,6 +1,8 @@
 .detail {
   margin-top: 4rem;
+  padding-left: 3rem;
   color: white;
+  float: left;
 }
 .line {
   border-bottom: #424242 1px solid;

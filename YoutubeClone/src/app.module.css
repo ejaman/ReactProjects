@@ -1,5 +1,5 @@
 .app {
-  max-width: 80rem;
+  max-width: 100%;
 }
 .content {
   display: flex;
@@ -7,6 +7,7 @@
 
 .detail {
   flex: 1 1 80%;
+  padding: 0.1rem;
 }
 .grid {
   width: 100%;
