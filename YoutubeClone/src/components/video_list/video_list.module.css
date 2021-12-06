@@ -1,9 +1,16 @@
-.list {
+.grid {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
   margin-left: 10.5rem;
   margin-top: 4rem;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.list {
+  width: 80%;
+  margin-top: 3rem;
   padding: 0.5rem;
   list-style: none;
 }

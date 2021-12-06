@@ -3,26 +3,46 @@ import SearchBar from "./components/search_bar/search_bar";
 import VideoList from "./components/video_list/video_list";
 import styles from "./app.module.css";
 import SideBar from "./components/side_bar/side_bar";
+import Detail from "./components/detail/detail";
 
 function App({ youtube }) {
   const [videos, setVideos] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
+  const displayType = selectedVideo ? styles.list : styles.grid;
   const search = (query) => {
     youtube
       .search(query) //
       .then((videos) => setVideos(videos));
   };
 
+  const selectVideo = (video) => {
+    setSelectedVideo(video);
+  };
+
   useEffect(() => {
     youtube
       .mostPopular() //
       .then((videos) => setVideos(videos));
-  }, []);
+  }, [youtube]);
 
   return (
     <div className={styles.app}>
       <SearchBar onSearch={search} />
-      <SideBar />
-      <VideoList videos={videos} />
+      {!selectedVideo && <SideBar />}
+      <section className={styles.content}>
+        {selectedVideo && (
+          <div className={styles.detail}>
+            <Detail video={selectedVideo} />
+          </div>
+        )}
+        <div className={`${displayType}`}>
+          <VideoList
+            videos={videos}
+            onVideoClick={selectVideo}
+            display={selectedVideo ? "list" : "gird"}
+          />
+        </div>
+      </section>
     </div>
   );
 }

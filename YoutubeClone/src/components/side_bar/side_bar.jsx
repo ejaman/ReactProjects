@@ -37,7 +37,7 @@ const SideBar = (props) => {
       <li className={styles.line}></li>
       <li className={styles.memu}>
         <a title="mostPopular" href="https://github.com/ejaman/ReactProjects">
-          <i className="fab fa-github"></i>
+          <i className="fab fa-youtube-square"></i>
           <span className={styles.name}>Code</span>
         </a>
       </li>
@@ -48,10 +48,11 @@ const SideBar = (props) => {
         </a>
       </li>
       <li className={styles.line}></li>
-      <li>SUBSCRIPTIONS</li>
+      <li className={styles.sub}>SUBSCRIPTIONS</li>
+      {/* 계정이름이랑 썸넬 받아오기  */}
       <li className={styles.memu}>
         <a
-          title="mostPopular"
+          title="subscriptions"
           href="https://www.youtube.com/c/%EB%93%9C%EB%A6%BC%EC%BD%94%EB%94%A9by%EC%97%98%EB%A6%AC"
         >
           <span className={styles.name}>계정</span>
@@ -59,7 +60,7 @@ const SideBar = (props) => {
       </li>
       <li className={styles.memu}>
         <a
-          title="mostPopular"
+          title="subscriptions"
           href="https://www.youtube.com/c/%EA%BF%80%ED%82%A4%ED%95%98%EC%9A%B0%EC%8A%A4"
         >
           <span className={styles.name}>계정</span>
@@ -67,7 +68,7 @@ const SideBar = (props) => {
       </li>
       <li className={styles.memu}>
         <a
-          title="mostPopular"
+          title="subscriptions"
           href="https://www.youtube.com/c/SBSTV%EB%8F%99%EB%AC%BC%EB%86%8D%EC%9E%A5x%EC%95%A0%EB%8B%88%EB%A9%80%EB%B4%90"
         >
           <span className={styles.name}>계정</span>

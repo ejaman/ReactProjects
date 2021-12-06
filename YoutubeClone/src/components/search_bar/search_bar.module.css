@@ -23,6 +23,7 @@
   display: flex;
   margin-top: 0.5rem;
   align-items: center;
+  margin-right: 12rem;
 }
 
 .logoImg {
@@ -30,7 +31,6 @@
 }
 .logotxt {
   margin-left: 0.1rem;
-  margin-right: 12rem;
   font-size: 1.5rem;
   font-weight: 700;
   font-family: "PT Sans Narrow", sans-serif;

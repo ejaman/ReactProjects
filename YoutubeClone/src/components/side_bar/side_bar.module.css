@@ -13,7 +13,7 @@
 }
 
 .memu {
-  padding: 0.9rem;
+  padding: 0.7rem;
   padding-left: 1.8rem;
 }
 .memu:hover {
@@ -33,5 +33,12 @@ a:visited {
   width: 93%;
   height: 1px;
   background: #424242;
-  margin: 1.5rem 0;
+  margin: 1.2rem 0;
+}
+.sub {
+  font-weight: bold;
+  color: #aaaaaa;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
