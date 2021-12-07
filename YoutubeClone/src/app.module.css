@@ -16,3 +16,13 @@
 .list {
   width: 30%;
 }
+
+@media screen and (max-width: 50rem) {
+  .content {
+    flex-direction: column;
+  }
+  .list {
+    padding-left: 1.5rem;
+    width: 100%;
+  }
+}

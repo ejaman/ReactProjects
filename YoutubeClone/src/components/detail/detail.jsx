@@ -13,12 +13,12 @@ const Detail = ({ video, video: { snippet } }) => (
       frameBorder="0"
       allowFullScreen
     />
+    <h2>{snippet.title}</h2>
+    <p>{snippet.publishedAt}</p>
     <div className={styles.line}>
-      <h2>{snippet.title}</h2>
-      <p>{snippet.publishedAt}</p>
+      <h3>{snippet.channelTitle}</h3>
+      <p>{snippet.description}</p>
     </div>
-    <h3>{snippet.channelTitle}</h3>
-    <p>{snippet.description}</p>
   </section>
 );
 

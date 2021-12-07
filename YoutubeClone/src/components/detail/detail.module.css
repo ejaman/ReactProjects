@@ -1,10 +1,12 @@
 .detail {
   margin-top: 4rem;
+  margin-right: 0.5rem;
   padding-left: 2.5rem;
   padding-right: 0.5rem;
   color: white;
   float: left;
 }
 .line {
+  border-top: #424242 1px solid;
   border-bottom: #424242 1px solid;
 }
