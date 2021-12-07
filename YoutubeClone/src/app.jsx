@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import SearchBar from "./components/search_bar/search_bar";
 import VideoList from "./components/video_list/video_list";
 import styles from "./app.module.css";
@@ -9,11 +9,18 @@ function App({ youtube }) {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const displayType = selectedVideo ? styles.list : styles.grid;
-  const search = (query) => {
-    youtube
-      .search(query) //
-      .then((videos) => setVideos(videos));
-  };
+  const search = useCallback(
+    (query) => {
+      setSelectedVideo(null);
+      // 로딩스페너 넣을거면 여기에
+      youtube
+        .search(query) //
+        .then((videos) => {
+          setVideos(videos);
+        });
+    },
+    [youtube]
+  );
 
   const selectVideo = (video) => {
     setSelectedVideo(video);
