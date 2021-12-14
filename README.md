@@ -3,8 +3,6 @@
 리액트로 만든 3개의 프로젝트 
 
 ## 1. Habbit Tracker<br>
-### Tech Stack<br>
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/> <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=flat&logo=Yarn&logoColor=white"/> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/>
 
 habit tracker의 README를 참고해주세요👍<br>
 🔗 README.md link: https://github.com/ejaman/ReactProjects/blob/master/HabitTracker/README.md<br>
@@ -15,7 +13,6 @@ habit tracker의 README를 참고해주세요👍<br>
 
 ## 2. Youtube Clone<br>
 ### Tech Stack<br>
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/Youtube API-FF0000?style=flat&logo=Youtube&logoColor=white"/> <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=Postman&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/> <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=flat&logo=Yarn&logoColor=white"/> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/PostCSS-DD3A0A?style=flat&logo=PostCSS&logoColor=white"/>
 
 Youtube Clone의 README를 참고해주세요👍<br>
 🔗 README.md link: https://github.com/ejaman/ReactProjects/blob/master/YoutubeClone/README.md<br>
